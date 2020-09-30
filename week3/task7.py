@@ -1,0 +1,6 @@
+a = input('').split()
+n = int(a[0])
+set_of_str = set(a)
+len_set = len(set_of_str )
+print(set_of_str )
+print(len_set)
