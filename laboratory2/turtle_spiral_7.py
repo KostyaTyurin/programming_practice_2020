@@ -1,4 +1,4 @@
-import turtle as tr
+import turtle_def_mnogoangles_9 as tr
 import numpy as np
 tr.speed(0)
 tr.width(3)

@@ -1,4 +1,4 @@
-import turtle as tr
+import turtle_def_mnogoangles_9 as tr
 tr.shape('turtle')
 tr.color('red')
 tr.width(5)
