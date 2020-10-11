@@ -1,0 +1,16 @@
+import turtle as tr
+tr.shape('turtle')
+tr.speed(0)
+tr.color('teal')
+tr.width(3)
+tr.turtlesize(2)
+for i in range(100,1000,100):
+    tr.fd(i)
+    tr.left(90)
+    tr.fd(i+50)
+    tr.left(90)
+    tr.fd(i+50)
+    tr.left(90)
+    tr.fd(i+100)
+    tr.left(90)
+tr.exitonclick()
