@@ -6,6 +6,7 @@ tr.penup()
 tr.goto(-200,-200)
 tr.pendown()
 tr.left(180)
+tr.width(2)
 
 for i in range(4):
     tr.right(90)
@@ -15,7 +16,9 @@ tr.penup()
 vx = 1
 vy = 1
 
-number_of_turtles = 8
+tr.tracer(70)
+
+number_of_turtles = 100
 tr.turtles()
 pool = [tr.Turtle(visible=False) for i in range(number_of_turtles)]
 poolx = []
@@ -35,7 +38,7 @@ for unit in pool:
 
     unit.shape('circle')
     unit.speed('fastest')
-    unit.turtlesize(0.5)
+    unit.turtlesize(0.3)
     unit.penup()
     unit.hideturtle()
     unit.goto(x, y)
