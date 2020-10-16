@@ -45,9 +45,9 @@ for unit in pool:
     unit.showturtle()
 
 def move(i):
-    if poolx[i] >= 200 or poolx[i] <= -200:
+    if poolx[i] >= 196.5 or poolx[i] <= -196.5:
         poolvx[i] = -poolvx[i]
-    if pooly[i] >= 200 or pooly[i] <= -200:
+    if pooly[i] >= 196.5 or pooly[i] <= -196.5:
         poolvy[i] = -poolvy[i]
     poolx[i] += poolvx[i]
     pooly[i] += poolvy[i]
