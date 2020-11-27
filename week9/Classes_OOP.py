@@ -7,8 +7,6 @@ class vector(object):
     def __init__(self, x):
         self.matrix = np.array(x)
 
-        print('Создан объект класса')
-
     def __add__(self, other):
         if not isinstance(other, vector):
             raise ValueError('объект не принадлежит классу')
@@ -30,7 +28,7 @@ class vector(object):
 
         skoal_mul = 0
         for i in range(len(self.matrix)):
-            skoal_mul += self.matrix[i] + other.getmatrix()[i]
+            skoal_mul += self.matrix[i] * other.getmatrix()[i]
 
         return vector(skoal_mul)
 
@@ -76,6 +74,7 @@ vect2 = vector([56, 0, 0])
 vect3 = vect1 % vect2
 d = a * 5
 e = a + b
+k = vect1 ** vect2
 
 
-print(d.getmatrix(), vect3.getmatrix())
+print(d.getmatrix(), k.getmatrix())
